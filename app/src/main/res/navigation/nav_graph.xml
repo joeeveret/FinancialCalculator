@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.jeverett.financialcalculator.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_simpleInterestFragment"
+            app:destination="@id/simpleInterestFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_compoundInterestFragment"
+            app:destination="@id/compoundInterestFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_futureValueFragment"
+            app:destination="@id/futureValueFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_presentValueFragment"
+            app:destination="@id/presentValueFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpleInterestFragment"
+        android:name="com.jeverett.financialcalculator.SimpleInterestFragment"
+        android:label="fragment_simple_interest"
+        tools:layout="@layout/fragment_simple_interest" >
+        <action
+            android:id="@+id/action_simpleInterestFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/compoundInterestFragment"
+        android:name="com.jeverett.financialcalculator.CompoundInterestFragment"
+        android:label="CompoundInterestFragment" >
+        <action
+            android:id="@+id/action_compoundInterestFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/futureValueFragment"
+        android:name="com.jeverett.financialcalculator.FutureValueFragment"
+        android:label="fragment_future_value"
+        tools:layout="@layout/fragment_future_value" >
+        <action
+            android:id="@+id/action_futureValueFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/presentValueFragment"
+        android:name="com.jeverett.financialcalculator.PresentValueFragment"
+        android:label="PresentValueFragment" >
+        <action
+            android:id="@+id/action_presentValueFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

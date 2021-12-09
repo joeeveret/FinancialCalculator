@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/surfaceBlue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/title"
+            android:text="@string/financial_calculator"
+            android:background="@drawable/edit_text_background"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="@color/textGreen"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/simple_interest"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/simpleInterestButton"
+            android:backgroundTint="@color/textRed" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/compound_interest"
+            android:id="@+id/compoundInterestButton"
+            android:background="@drawable/edit_text_background"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/textRed"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/future_value"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/futureValueButton"
+            android:backgroundTint="@color/textRed"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/present_value"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/presentValueButton"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/textRed"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp" />
+
+
+</LinearLayout>
+
+

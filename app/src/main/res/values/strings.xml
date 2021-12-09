@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Financial Calculator</string>
+    <string name="simple_interest">Simple Interest</string>
+    <string name="compound_interest">Compound Interest</string>
+    <string name="mortgage">Mortgage</string>
+    <string name="annuities">Annuities</string>
+    <string name="placeholder1">Placeholder1</string>
+    <string name="placeholder2">Placeholder2</string>
+    <string name="simpleinterestlabel">Simple Interest</string>
+    <string name="principalLabel">Principal</string>
+    <string name="interestLabel">Interest Rate</string>
+    <string name="timeLabel">Time (months)</string>
+    <string name="resultLabel">Result</string>
+    <string name="resultText">Result</string>
+    <string name="Answer">Answer</string>
+    <string name="calculate">Calculate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="financial_calculator">Financial Calculator</string>
+    <string name="future_value">Future Value</string>
+    <string name="present_value">Present Value</string>
+    <string name="annuity">Annuity</string>
+    <string name="compoundInterestLabel">Compound Interest</string>
+    <string name="monthly">Monthly</string>
+    <string name="annually">Annually</string>
+    <string name="period">Compounding periods in a year</string>
+    <string name="time_n_in_months">Time\n(In Months)</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/surfaceBlue"
+    tools:context=".CompoundInterestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="@string/compound_interest"
+            android:textColor="@color/textGreen"
+            android:fontFamily="sans-serif-black"
+            android:textSize="26dp"
+            android:gravity="center_vertical"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Main Menu"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:backgroundTint="@color/textRed"
+            android:id="@+id/mainMenuButtonCompound" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:text="@string/principalLabel"
+            android:gravity="center_vertical"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textGreen"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/compoundPrincipalInput"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:text="@string/interestLabel"
+            android:gravity="center_vertical"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textGreen"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:hint="e.g. 10 for 10%"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/compoundInterestInput"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:text="@string/timeLabel"
+            android:gravity="center_vertical"
+            android:textSize="26dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/textGreen"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/compoundTimeInput"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:padding="3dp"
+            android:text="@string/period"
+            android:textColor="@color/textGreen"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/periodInput"
+            android:layout_width="0dp"
+            android:layout_height="75dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/resultLabel"
+            android:gravity="center_vertical"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/textGreen"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/compoundInterestResult"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:background="@drawable/edit_text_background"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:id="@+id/calculateButtonCompound"
+            android:text="@string/calculate"
+            android:layout_marginLeft="70dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="24dp"
+            android:backgroundTint="@color/textGreen" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
